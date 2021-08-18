@@ -5,6 +5,7 @@ import './App.css';
 import { SayMyName } from './components/SayMyName';
 import { Person } from './components/Person';
 import { List } from './components/List';
+import { Evento } from './components/Evento'
 
 function App() {
   const name = "jose"
@@ -42,7 +43,11 @@ function App() {
           profession="programador"
         />
         <List />
+
+        <Evento numero={1} />
+
       </main>
+
     </div >
   );
 }
