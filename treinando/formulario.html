@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: lightblue;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin: 25px;
+        }
+
+        /* h4 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        } */
+
+        input {
+            margin: 3px;
+        }
+
+        a {
+            color: #5340a8;
+            border: 1px solid #5340a8;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="./pagina2.html">Voltar para pagina2.html</a>
+    <form action="processa.php" method="post">
+        <fieldset>
+            <legend>Formulário</legend>
+            <br>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" placeholder="Digite seu nome">
+            <br>
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" placeholder="******">
+            <br>
+            <label for="informacao_oculta">Input oculto</label>
+            <input type="hidden" name="informacao_oculta" value="mensagem oculta">
+            <br>
+
+            <hr>
+            <label for="selecao">Select</label>
+            <select name="selecao">
+                <option>Selecione</option>
+                <option value="1">Opção 1</option>
+                <option value="2">Opção 2</option>
+                <option value="3">Opção 3</option>
+            </select>
+            <br>
+
+            <hr>
+            <div>
+                <label for="radio1">Radio</label><br>
+                <input type="radio" name="radio1" value="1" checked>Valor 1<br>
+                <input type="radio" name="radio1" value="2">Valor 2<br>
+            </div>
+
+            <hr>
+            <div>
+                <label for="ck1">Checkbox</label><br>
+                <input type="checkbox" name="ck1" value="1" checked>Valor 1<br>
+                <input type="checkbox" name="ck1" value="2">Valor 2<br>
+                <input type="checkbox" name="ck1" value="3">Valor 3<br>
+            </div>
+
+            <input type="submit" value="Enviar" name="submit">
+
+        </fieldset>
+
+</body>
+
+
+
+</html>
