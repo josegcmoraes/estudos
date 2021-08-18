@@ -13,3 +13,14 @@ Conteúdo aprendido no youtube
 - Aprendi a usar: create-react-app, JSX, componentes, props, CSSmodules, reactfragments, eventos no react(onClick, onChange, onSubmit), useState, passagem de eventos por props
 - Canal Matheus Battisti - Hora de Codar
 - https://www.youtube.com/playlist?list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO
+
+
+#### treinando
+- Exercícios feitos para aprimorar o meu desenvolvimento em Html, Css, JavaScript
+
+
+
+
+
+
+Por José Geraldo
