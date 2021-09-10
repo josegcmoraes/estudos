@@ -13,9 +13,9 @@ Conteúdo aprendido no youtube
 - Canal Matheus Battisti - Hora de Codar
 - https://www.youtube.com/playlist?list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO
 
-#### costs Canal
-- Projeto para gerenciamento de projetos e serviços que um projeto possa possuir
-- aprendi a usar diferentes rotas, criação de formulário
+#### costs (Projeto)
+- Projeto em reactjs para gerenciamento de projetos e serviços que um projeto possa possuir
+- aprendi a usar diferentes rotas, criação de formulário, cssmodules
 - Canal Matheus Battisti - Hora de Codar
 - https://www.youtube.com/playlist?list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO
 
