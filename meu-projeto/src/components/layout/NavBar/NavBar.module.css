@@ -1,0 +1,24 @@
+.Container{
+    list-style: none;
+
+    display: flex;
+    justify-content: end;
+}
+
+.Container li{
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 1rem;
+    background: grey;
+    border-radius: 0.25rem;
+    transition: filter 0.2s;
+}
+
+.Container li :hover{
+    filter: brightness(0.8);
+}
+
+.Container li a{
+    text-decoration: none;
+    color: white;
+}

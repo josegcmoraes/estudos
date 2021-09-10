@@ -22,7 +22,7 @@ export function Evento({ numero }) {
         <div className={styles.Container}>
             <h1>Eventos</h1>
             <p>Clique no botão para disparar um evento</p>
-            <Button type="text" text="novo evento" />
+            {/* <Button type="text" text="novo evento" /> */}
             <Button type="button" text="Ativar formulário!" event={openForm} />
             <Button type="text" text="meu evento" event={myEvent} />
             {/* <button type="button" onClick={myEvent}>Ativar!</button> */}

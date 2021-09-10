@@ -1,54 +1,25 @@
-// import logo from './logo.svg';
-import { HelloWorld } from './components/HelloWorld';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import { Contato } from './pages/Contato';
+import { Empresa } from './pages/Empresa';
+import { Home } from './pages/Home';
 
 import './App.css';
-import { SayMyName } from './components/SayMyName';
-import { Person } from './components/Person';
-import { List } from './components/List';
-import { Evento } from './components/Evento'
+import { NavBar } from './components/layout/NavBar/NavBar';
 
 function App() {
-  const name = "jose"
-  const newName = name.toUpperCase();
-  const url = 'https://via.placeholder.com/150'
-
-  function sum(a, b) {
-    return a + b
-  }
-
-
 
   return (
-    <div>
-      {/* // <div className="App"> */}
-      {/* <header className="App-header"> */}
-      <header className="App-Header">
-        <h1>{name} - {newName}</h1>
-        <p> Soma {sum(2, 4)}</p>
+    <Router>
+      <NavBar />
 
-        <img src={url} alt="imageCenter" />
-      </header>
+      <Switch>
+        <Route exact path="/"><Home /></Route>
+        <Route path="/empresa"><Empresa /></Route>
+        <Route path="/contato"><Contato /></Route>
+      </Switch>
 
-      <main>
-        <HelloWorld />
-        <br />
-        <SayMyName name={name} />
-        <SayMyName name="Maria" />
-        <SayMyName name="Ricardo" />
-
-        <Person
-          urlImageProfile='https://via.placeholder.com/150'
-          name="Ricardo"
-          age="30"
-          profession="programador"
-        />
-        <List />
-
-        <Evento numero={1} />
-
-      </main>
-
-    </div >
+    </Router>
   );
 }
 

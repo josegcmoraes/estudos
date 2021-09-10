@@ -1,0 +1,38 @@
+
+.footer {
+    width: 100%;
+    height: 200px;
+    border-top: 1px solid #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    margin-top: 1rem;
+    background: #fff;
+  }
+  
+  .footer ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+  }
+s
+  .footer li {
+    margin: 0 1rem;
+  }
+
+  .footer svg{
+      font-size: 1.5rem;
+      color: blue;
+      cursor: pointer;
+      margin: 0.5rem;
+  }
+
+  .footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
