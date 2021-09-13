@@ -13,6 +13,10 @@ export default function Home({ list }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <header className={styles.header}>
+        <Link href="/busca">🔎 Ir para a busca</Link>
+      </header>
+
       <main className={styles.main}>
         <h1 className={styles.title}>
           Filmes em Destaque <a href="https://nextjs.org">Next.js!</a>
@@ -20,7 +24,7 @@ export default function Home({ list }) {
 
         {/* <p>{props.name} </p> */}
 
-        <Link href="/busca">Ir para a busca</Link>
+
 
         <ul>
           {list.map(item => (
