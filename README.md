@@ -15,7 +15,7 @@ Conteúdo aprendido no youtube
 
 #### costs (Projeto)
 - Projeto em reactjs para gerenciamento de projetos e serviços que um projeto possa possuir
-- aprendi a usar diferentes rotas, criação de formulário, cssmodules
+- aprendi a usar diferentes rotas, criação de formulário, componentes reutilizáveis, cssmodules
 - Canal Matheus Battisti - Hora de Codar
 - https://www.youtube.com/playlist?list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO
 
