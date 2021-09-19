@@ -1,31 +1,36 @@
-.home_container {
-    width: 100%;
+.homeContainer {
+    /* max-width: 1024px; */
+    width: 1024;
+    /* width: 100%; */
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     
-    padding: 4rem;
+    margin: 0 auto;
+    
+    /* padding: 4rem; */
 }
 
-.home_container h1{
+.homeContainer h1{
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
 }
 
-.home_container span{
+.homeContainer span{
     color: #ffbb33;
     padding:0 0.2rem;
     background-color: #222;
 }
 
-.home_container p {
+.homeContainer p {
     margin-bottom: 1.5rem;
     color: #7b7b7b;
 }
 
-.home_container img {
+.homeContainer img {
     width: 350px;
     margin: 2.5rem 0;
 }
+

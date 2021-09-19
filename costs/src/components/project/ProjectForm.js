@@ -7,8 +7,9 @@ import { Select } from '../form/Select'
 import { SubmitButton } from '../form/SubmitButton'
 import { TextArea } from '../form/TextArea'
 
-export function ProjectForm({ btnText }) {
+export function ProjectForm({ handleSubmit, btnText, projectData }) {
     const [categories, setCategories] = useState([]);
+    const [project, setProject] = useState(projectData || []);
 
     useEffect(() => {
         fetch("http://localhost:5000/categories", {
@@ -26,8 +27,30 @@ export function ProjectForm({ btnText }) {
             })
     }, [])
 
+    const submit = (e) => {
+        e.preventDefault();
+        handleSubmit(project);
+        // console.log(project);
+    }
+
+    function handleChange(e) {
+        setProject({ ...project, [e.target.name]: e.target.value })
+    }
+
+    function handleCategory(e) {
+        setProject({
+            ...project, category: {
+                id: e.target.value,
+                name: e.target.options[e.target.selectedIndex].text,
+            }
+        })
+    }
+
+    function handleDescription(e) {
+        setProject({ ...project, [e.target.name]: e.target.value })
+    }
     return (
-        <form action="" className={styles.form}>
+        <form onSubmit={submit} className={styles.form}>
 
             <Input
                 text="Nome do projeto"
@@ -35,6 +58,9 @@ export function ProjectForm({ btnText }) {
                 name="name"
                 placeholder="Insira o nome do projeto"
                 required="true"
+                handleOnChange={handleChange}
+                value={project.name ? project.name : ''}
+            // handleOnChange={e => setproject({ ...project, [project.name]: e.target.value })}
             />
 
             <Input
@@ -43,12 +69,16 @@ export function ProjectForm({ btnText }) {
                 name="budget"
                 placeholder="Insira o orçamento total"
                 required="true"
+                handleOnChange={handleChange}
+                value={project.budget ? project.budget : ''}
             />
 
             <Select
                 text="Selecione a categoria"
                 name="category_id"
                 options={categories}
+                handleOnChange={handleCategory}
+                value={project.category ? project.category.id : ''}
             />
 
             <Input
@@ -58,15 +88,18 @@ export function ProjectForm({ btnText }) {
                 // placeholder={new Intl.DateTimeFormat('pt-BR').format(new Date())}
                 // value="01/01/2021"
                 required="true"
-                min={new Date()}
+                handleOnChange={handleChange}
+                value={project.initialDate ? project.initialDate : ''}
+            // min={new Date()}
             />
 
-            <Input
+            {/* <Input
                 text="Equipe Externa"
                 type="checkbox"
                 name="externalTime"
                 required="false"
-            />
+                handleOnChange={handleChange}
+            /> */}
 
             <TextArea
                 text="Descrição do Projeto"
@@ -75,6 +108,8 @@ export function ProjectForm({ btnText }) {
                 cols="15"
                 rows="5"
                 required="false"
+                handleOnChange={handleDescription}
+                value={project.description ? project.description : ''}
             />
 
             <SubmitButton
