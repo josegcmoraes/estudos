@@ -1,0 +1,15 @@
+.login {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    /* text-align: center; */
+    margin: 0 auto;
+}
+
+.login .entry{
+    /* display: block; */
+    /* flex-direction: row; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
