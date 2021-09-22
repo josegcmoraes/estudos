@@ -94,7 +94,7 @@ export function ProjectForm({ handleSubmit, btnText, projectData }) {
             />
 
             {/* <Input
-                text="Equipe Externa"
+                text="Equipe Exter na"
                 type="checkbox"
                 name="externalTime"
                 required="false"
