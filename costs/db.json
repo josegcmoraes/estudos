@@ -116,6 +116,19 @@
       "cost": 0,
       "services": [],
       "id": 9
+    },
+    {
+      "name": "Criação de gráficos em tempo real",
+      "budget": "10450",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "initialDate": "2021-10-04",
+      "description": "Neste projetos deverá ser criados os gráficos conforme a documentação.\n\nDeve existir pelo menos 3 gráficos sincronizados com os dispositivos.\n\na equipe deve ter ao menos 3 integrantes.",
+      "cost": 0,
+      "services": [],
+      "id": 10
     }
   ],
   "categories": [
