@@ -7,10 +7,19 @@ import styles from './Login.module.css';
 export function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    let userLogged = "logado"
+    let userLogged = "deslogado"
+
+    const submit = (e) => {
+        e.preventDefault();
+
+        if (email.length > 0 && password.length > 0) {
+            userLogged = 'logado';
+        }
+        alert(`${email} - ${password} - ${userLogged}`)
+    }
 
     return (
-        <div className={styles.login}>
+        <form onSubmit={submit} className={styles.login}>
             <h1>Login</h1>
 
             <Input
@@ -37,6 +46,6 @@ export function Login() {
 
             <p>{userLogged}</p>
             <p>{email} - {password}</p>
-        </div>
+        </form>
     )
 }
