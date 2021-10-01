@@ -23,7 +23,7 @@ export function ProjectCard({ id, name, budget, category, initialDate, descripti
             </p>
             <p className={styles.description}>{description}</p>
             <div className={styles.projectCardActions}>
-                <Link to="/">
+                <Link to={`/project/${id}`}>
                     <BsPencil /> Editar
                 </Link>
                 <button onClick={remove}>

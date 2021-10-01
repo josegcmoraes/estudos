@@ -10,6 +10,7 @@ import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
 import { Projects } from './components/pages/Projects';
 import { Login } from './components/pages/Login';
+import { Project } from './components/pages/Project';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route exact path="/contact"><Contact /></Route>
           <Route exact path="/newproject"><NewProject /></Route>
           <Route exact path="/login"><Login /></Route>
+          <Route path="/project/:id"><Project /></Route>
         </Container>
       </Switch>
 
