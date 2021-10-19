@@ -9,8 +9,21 @@
       },
       "initialDate": "2021-09-20",
       "description": "secret project m",
-      "cost": 0,
-      "services": [],
+      "cost": 958,
+      "services": [
+        {
+          "name": "serviço",
+          "cost": "804",
+          "description": "44rfvk",
+          "id": "bfe984fb-9ae7-4939-b61e-7f0f10f698bc"
+        },
+        {
+          "name": "serviço 4",
+          "cost": "154",
+          "description": "4rvkd 44rfvkfjd cknjdvlc,m",
+          "id": "e0ace9ba-cff7-49e0-adca-8073e016af07"
+        }
+      ],
       "id": 1
     },
     {

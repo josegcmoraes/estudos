@@ -4,17 +4,16 @@ import Container from './Container'
 
 import logo from '../../img/costs_logo.png'
 import styles from './Navbar.module.css'
-import { useState } from 'react'
+// import { useState } from 'react'
 
 export function Navbar() {
-    const [userLogged, setUserLogged] = useState("logado");
+    // const [userLogged, setUserLogged] = useState("logado");
 
-    function userLogado() {
-        if (userLogged === "logado") {
-            setUserLogged("deslogado");
-        }
-
-    }
+    // function userLogado() {
+    //     if (userLogged === "logado") {
+    //         setUserLogged("deslogado");
+    //     }
+    // }
 
     return (
         <nav className={styles.navbar}>
